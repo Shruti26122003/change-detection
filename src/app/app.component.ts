@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ChangeDetectionDemoComponent } from './change-detection-demo/change-detection-demo.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true,
+  imports: [ChangeDetectionDemoComponent], // Import the standalone component
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'change-detection';
+  title = 'change-detection-app';
 }

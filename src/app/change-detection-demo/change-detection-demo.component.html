@@ -1,0 +1,11 @@
+<div>
+    <h2>Change Detection Demo</h2>
+    <p>Count: {{ count }}</p>
+    
+    <!-- Button to manually trigger change detection -->
+    <button (click)="triggerChangeDetection()">Increment and Trigger Change Detection</button>
+  
+    <!-- Button to auto-increment the count without triggering change detection -->
+    <button (click)="autoUpdate()">Auto Update (No Change Detection)</button>
+  </div>
+  
